@@ -1,4 +1,4 @@
-module commands-zetools
+module github.com/tejzpr/commands-zetools
 
 go 1.18
 
