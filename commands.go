@@ -62,3 +62,8 @@ func GetCommands() []*cli.Command {
 	}
 	return cmds
 }
+
+// SetVersion sets the version of the application
+func SetVersion(version string) {
+	setVersion(version)
+}

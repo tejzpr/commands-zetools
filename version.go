@@ -6,7 +6,7 @@ import (
 	cli "github.com/urfave/cli/v2"
 )
 
-const appVersion = "v1"
+var appVersion = "v1"
 
 func getVersion() *cli.Command {
 	return &cli.Command{
@@ -18,4 +18,8 @@ func getVersion() *cli.Command {
 			return nil
 		},
 	}
+}
+
+func setVersion(version string) {
+	appVersion = version
 }
